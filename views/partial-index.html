@@ -1,0 +1,18 @@
+<form name="survey-form" action="/" method="POST">
+
+${classInfoData.map(entry => {
+    return `<p>${entry.topics_name} - 
+        <select>
+            ${statusInfo.map(entry => {
+                return `<option>${entry.status_title}</option>`
+            })}
+        </select>
+        <button type='submit'>Oops!</button>
+    </p>`
+}).join('')}
+
+</form>
+
+
+
+
